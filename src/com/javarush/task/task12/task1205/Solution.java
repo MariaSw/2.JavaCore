@@ -13,9 +13,12 @@ public class Solution {
     }
 
     public static String getObjectType(Object o) {
-        //Напишите тут ваше решение
-
-        return "Неизвестное животное";
+        switch (o.getClass().getSimpleName()){
+            case "Whale": return "Кит";
+            case "Dog": return "Собака";
+            case "Cow": return "Корова";
+            default:return "Неизвестное животное";//Напишите тут ваше решение
+        }
     }
 
     public static class Cow {
