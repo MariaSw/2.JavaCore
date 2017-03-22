@@ -15,7 +15,7 @@ public class Solution implements Person{
 
         while (true) {
             key = reader.readLine();
-                if(key.equals("user")) new User();
+                if(key.equals("user")) person = new User();
                 else if (key.equals("loser")) person = new Loser();
                 else if (key.equals("coder")) person = new Coder();
                 else if (key.equals("proger"))person = new Proger();
